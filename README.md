@@ -1,17 +1,17 @@
 # Console-Tube
 
-![](http://medias.gifboom.com/medias/de50a62790694f3a9df69d5f91456806.mp4)
+![](http://gmork.in/tube.gif)
 
 Watch youtube in Chrome debugger console.
 
 ## Prerequisite
 
-[ffmpeg]()
-[youtube-dl]()
+- [ffmpeg](http://www.ffmpeg.org)
+- [youtube-dl](http://rg3.github.io/youtube-dl/)
 
 ## How To Use
 
-clone this repo and run
+git clone this repo and run
 
 ```bash
 $ git clone https://github.com/fand/console-tube
@@ -20,7 +20,7 @@ $ npm install
 $ node bin/www  #=> listen on localhost:3000 by default.
 ```
 
-load "console-tube.js" to your webpage.
+Load "console-tube.js" to your webpage.
 
 ```html
 <html>
@@ -28,7 +28,7 @@ load "console-tube.js" to your webpage.
 </html>
 ```
 
-Then "console.tube()" on console.
+Then "console.tube()" on debugger console.
 
 ```javascript
 console.tube('http://www.youtube.com/watch?v=XXXXXXXX');
@@ -42,7 +42,6 @@ public domain
 # See Also
 
 [console.image](https://github.com/adriancooney/console.image)
-
-[](http://html5doctor.com/video-canvas-magic/)
-[](http://granular.cs.umu.se/browserphysics/?p=2287)
-[](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg)
+<!-- - [http://html5doctor.com/video-canvas-magic/](http://html5doctor.com/video-canvas-magic/) -->
+<!-- - [http://granular.cs.umu.se/browserphysics/?p=2287](http://granular.cs.umu.se/browserphysics/?p=2287) -->
+<!-- - [https://github.com/fluent-ffmpeg/node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg) -->
