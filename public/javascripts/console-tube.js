@@ -10,21 +10,21 @@
 
         // Prepare CSS
         var css = document.createElement('style');
-        css.innerHTML = '.debug-tube{position: fixed; top: -10000px; z-index: -1;}';
+        css.innerHTML = '.console-tube{position: fixed; top: -10000px; z-index: -1;}';
         document.head.appendChild(css);
 
         // Create video element.
         var id = url.match(/v=([^&]*)/)[1];
         var video =  document.createElement('video');
-        video.src = 'http://192.168.50.11:3000/' + id;
-        video.id = 'debug-tube-video';
-        video.classList.add('debug-tube');
+        video.src = 'http://localhost:3000/' + id;
+        video.id = 'console-tube-video';
+        video.classList.add('console-tube');
         video.crossOrigin = "Anonymous";
 
         // Create canvas element.
         var canvas = document.createElement('canvas');
         var ctx = canvas.getContext('2d');
-        canvas.classList.add('debug-tube');
+        canvas.classList.add('console-tube');
 
         document.body.appendChild(video);
         document.body.appendChild(canvas);
@@ -54,9 +54,9 @@
     };
 
     console.detube = function () {
-        var video = document.getElementById('debug-tube-video');
+        var video = document.getElementById('console-tube-video');
         video.pause();
-        var tubes = document.getElementsByClassName('debug-tube');
+        var tubes = document.getElementsByClassName('console-tube');
         for (var i=0; i<tubes.length; i++) {
             document.body.removeChild(tubes[i]);
         }
