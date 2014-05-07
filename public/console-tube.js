@@ -1,3 +1,4 @@
+
 (function(console){
 
     var getBox = function (width, height) {
@@ -5,7 +6,8 @@
             Math.floor(width/2) + "px; line-height: " + height + "px;";
     };
 
-    console.tube = function(url, scale) {
+    console.tube = function(url, server_url, scale) {
+        server_url = server_url || 'http://localhost:3000/';
         scale = scale || 1;
 
         // Prepare CSS
@@ -16,7 +18,7 @@
         // Create video element.
         var id = url.match(/v=([^&]*)/)[1];
         var video =  document.createElement('video');
-        video.src = 'http://localhost:3000/' + id;
+        video.src = server_url + id;
         video.id = 'console-tube-video';
         video.classList.add('console-tube');
         video.crossOrigin = "Anonymous";
