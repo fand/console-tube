@@ -1,6 +1,6 @@
 # Console-Tube
 
-![](http://gmork.in/tube.gif)
+![](http://cdn-ak.f.st-hatena.com/images/fotolife/a/amagitakayosi/20140507/20140507072043.gif)
 
 Watch youtube in Chrome debugger console.
 
@@ -33,6 +33,12 @@ Then "console.tube()" on debugger console.
 ```javascript
 console.tube('http://www.youtube.com/watch?v=XXXXXXXX');
 ```
+
+## Tips
+
+- `console.detube()` to stop video.
+- `console.tube(url, server_url)` if server in not on localhost.
+
 
 ## LICENSE
 
