@@ -16,9 +16,10 @@
         document.head.appendChild(css);
 
         // Create video element.
-        var id = url.match(/v=([^&]*)/)[1];
+//        var id = url.match(/v=([^&]*)/)[1];
         var video =  document.createElement('video');
-        video.src = server_url + id;
+//        video.src = server_url + id;
+        video.src = server_url + encodeURIComponent(url);
         video.id = 'console-tube-video';
         video.classList.add('console-tube');
         video.crossOrigin = "Anonymous";
