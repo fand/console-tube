@@ -15,6 +15,8 @@
   },
   "devDependencies": {
     "youtube-dl": "~1.5.5",
-    "fluent-ffmpeg": "~1.7.1"
+    "fluent-ffmpeg": "~1.7.1",
+    "event-stream": "~3.1.5",
+    "youstream": "*"
   }
 }
