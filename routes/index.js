@@ -8,7 +8,10 @@ var fs = require('fs');
 
 router.get('/:url', function(req, res) {
   var url = decodeURIComponent(req.params.url);
-  var stream = youstream(url);
+  var stream = youstream(url, []);
+  stream.on('autherror', function () {
+    console.log('autherror');
+  });
   var command = new FFmpeg({source: stream})
         .withSize('320x240')
         .toFormat('webm')
