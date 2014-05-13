@@ -16,6 +16,6 @@
   "devDependencies": {
     "fluent-ffmpeg": "~1.7.1",
     "event-stream": "~3.1.5",
-    "youstream": "0.0.1"
+    "youstream": "0.1.1"
   }
 }
